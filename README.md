@@ -1,4 +1,4 @@
-# StarNG JavaScript Task 2
+# StartNG JavaScript Task 2
 
 First create an array of objects called data with the following values:
 
