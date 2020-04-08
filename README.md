@@ -10,11 +10,9 @@ First create an array of objects called data with the following values:
 
 4. Principal- 2000, time- 3
  
-
 NB: Each individual object should have 'principal' and 'time' as keys.
 
 Write a function called "interestCalculator" that takes an array as a single argument and does the following:
-
 
 Determine the rate applicable using the conditions:
 
@@ -34,9 +32,7 @@ Log the 'interestData' array to console BEFORE your return statement.
 
 Finally, call/execute the function and pass the 'data' array you created.
 
- 
-
-Submission: Upload your code to GitHub and submit the link to the file containing your code.
+ Submission: Upload your code to GitHub and submit the link to the file containing your code.
 
 Resources: Check the YouTube channel for the newly uploaded JS videos: https://www.youtube.com/c/learnwithhng
 
