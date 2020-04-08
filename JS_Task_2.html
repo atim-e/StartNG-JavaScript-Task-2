@@ -1,33 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Task 2</title>
+    <title>Document</title>
 </head>
-
 <body>
+
     <script>
 
-/////////////// Create an array of objects \\\\\\\\\\\\\\\\\\\\
+  let data = [
 
-        let data = [
-            { Principal: 2500, time: 1.8 },
-            { Principal: 1000, time: 5 },
-            { Principal: 3000, time: 1 },
-            { Principal: 2000, time: 3 },
-        ];
+    { principal: 2500, time: 1.8 },
 
-//////////////// A function called "interestCalculator" \\\\\\\\\
+    { principal: 1000, time: 5 }, 
 
-function interestCalculator(arr) {
+    { principal: 3000, time: 1 },
+
+    { principal: 2000, time: 3 }
+
+   ];
+
+function interestCalculator(arr){
+
+  let interestData = [];    
+
+
+  for (let x = 0; x < arr.length; x++) {
+    let principal = arr[x].principal;
+    let time = arr[x].time;
+
+    if (principal >= 2500 && time >1 && time < 3) {
+      rate = 3;
+    }
+    else if (principal >= 2500 && time >= 3) {
+      rate = 4;
+    }
+    else if (principal < 2500 || time <= 1) {
+      rate = 2;
+    }
+    else {
+      rate = 1;
+    }
     
+    interest = (principal * rate * time) / 100;
+
+
+    let calcInterest = {
+      principal: principal,
+      rate: rate,
+      time: time,
+      interest: interest
+    }
+    
+    interestData.push(calcInterest);   
+
+  }
+
+  console.log(interestData);
+  
+  return interestData;
+
 }
 
+interestCalculator(data);  
 
 
     </script>
+    
 </body>
-
 </html>
